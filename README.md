@@ -22,5 +22,17 @@ docker-in-docker:
 docker registry:
 - `docker login`
 - `docker push image:tag`
-you need to retag your image to show 
+you need to retag your image to show
+
+running docker:
+- `docker diff <image>`
+- `docker stop`
+- `docker kill`
+- `docker start`
+- `docker restart`
+- `docker run --nme <name> --rm -it <image:tag> command`
+
+Work log:
+- learned docker commands
+- deployed docker'd app to new GCP project 
 
