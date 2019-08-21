@@ -9,6 +9,7 @@ Repository with home tasks for OTUS/express40 DevOps course
 images:
 - `docker images (image ls)`
 - `docker rmi`
+- `docker build -t image:tag /path/to/Dockerfile`
 
 containers:
 - `docker inspect`
@@ -17,4 +18,9 @@ containers:
 
 docker-in-docker:
 - `docker run --privileged --cap-add=NET_ADMIN`
+
+docker registry:
+- `docker login`
+- `docker push image:tag`
+you need to retag your image to show 
 
