@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  ui:
+    image: ${USERNAME}/ui:${UI_VER}
+  post:
+    image: ${USERNAME}/post:${POST_VER}
+    command: --debug -w 2
+  comment:
+    image: ${USERNAME}/comment:${COMMENT_VER}
+    command: --debug -w 2

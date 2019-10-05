@@ -18,6 +18,8 @@ add a `.env` file to specifay defaults for environment variables in docker-compo
 
 on setting project base name as environment variable (or in the .env file), [read the docs](https://docs.docker.com/compose/reference/envvars/).
 
+If you use the `docker-compose.override.yml` file, the configs are merged.
+
 # 16. 01.08 Docker-3
 
 During builds, docker uses cache if the result of the command is similar to the result in cache AND if the layers above the target are not uinque.
