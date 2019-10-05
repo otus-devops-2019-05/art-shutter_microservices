@@ -2,6 +2,10 @@
 
 Repository with home tasks for OTUS/express40 DevOps course
 
+# 20. 30.08 Monitoring-1
+
+Prometheus uses exporters to gather maetrics. You can use varios exporters depending on the type of task you are performing. Default exporter to gether metrics from a linux host is `node exporter`.
+
 # 17. 06.08 Docker-4
 
 ## Networking in docker
