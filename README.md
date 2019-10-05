@@ -2,6 +2,22 @@
 
 Repository with home tasks for OTUS/express40 DevOps course
 
+# 17. 06.08 Docker-4
+
+## Networking in docker
+
+When using `host` netwrking, be mindful of the ports allocated on the host machine, as networking system of the container is not isolated in a separate namespace.
+
+When using the default `bridge` networking, mind the internal DNS settings.
+
+If you need to put containers in different networks, you can assign additional networks to containers by running `docker network connect <network> <container>`
+
+## Docker-compose
+
+add a `.env` file to specifay defaults for environment variables in docker-compose.yml.
+
+on setting project base name as environment variable (or in the .env file), [read the docs](https://docs.docker.com/compose/reference/envvars/).
+
 # 16. 01.08 Docker-3
 
 During builds, docker uses cache if the result of the command is similar to the result in cache AND if the layers above the target are not uinque.
