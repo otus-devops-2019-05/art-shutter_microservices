@@ -10,9 +10,6 @@ services:
       - '--config.file=/etc/prometheus/prometheus.yml'
       - '--storage.tsdb.path=/prometheus'
       - '--storage.tsdb.retention=1d'
-    networks:
-      - back_net
-      - front_net
   node-exporter:
     image: prom/node-exporter:v0.15.2
     user: root
@@ -24,8 +21,6 @@ services:
       - '--path.procfs=/host/proc'
       - '--path.sysfs=/host/sys'
       - '--collector.filesystem.ignored-mount-points="^/(sys|proc|dev|host|etc)($$|/)"'
-    networks:
-      - back_net
   cadvisor:
     image: google/cadvisor:v0.29.0
     volumes:
@@ -35,8 +30,6 @@ services:
       - '/var/lib/docker/:/var/lib/docker:ro'
     ports:
       - '8080:8080'
-    networks:
-      - back_net
   grafana:
     image: grafana/grafana:5.0.0
     volumes:
@@ -48,13 +41,12 @@ services:
       - prometheus
     ports:
       - 3000:3000
-    networks:
-      - back_net
 
 volumes:
   prometheus_data:
   grafana_data:
 
 networks:
-  back_net:
-  front_net:
+  default:
+    external:
+      name: reddit-app_single_net

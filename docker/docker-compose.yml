@@ -5,7 +5,7 @@ services:
     volumes:
       - post_db:/data/db
     networks:
-      back_net:
+      single_net:
         aliases:
           - post_db
           - comment_db
@@ -14,21 +14,18 @@ services:
     ports:
       - ${PUBLISHED_PORT}:9292/tcp
     networks:
-      - front_net
+      - single_net
   post:
     image: ${HUB_USERNAME}/post:${POST_VER}
     networks:
-      - back_net
-      - front_net
+      - single_net
   comment:
     image: ${HUB_USERNAME}/comment:${COMMENT_VER}
     networks:
-      - back_net
-      - front_net
+      - single_net
 
 volumes:
   post_db:
 
 networks:
-  back_net:
-  front_net:
+  single_net:
