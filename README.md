@@ -2,9 +2,9 @@
 
 Repository with home tasks for OTUS/express40 DevOps course
 
-# 20. 30.08 Monitoring-1
+# 20. 22.08 Monitoring-1
 
-Prometheus uses exporters to gather maetrics. You can use varios exporters depending on the type of task you are performing. Default exporter to gether metrics from a linux host is `node exporter`.
+Prometheus uses exporters to gather metrics. You can use various exporters depending on the type of task you are performing. Default exporter to gether metrics from a linux host is `node exporter`.
 
 # 19. 13.08 Gitlab CI
 
