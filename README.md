@@ -2,6 +2,10 @@
 
 Repository with home tasks for OTUS/express40 DevOps course
 
+# 20. 22.08 Monitoring-1
+
+Prometheus uses exporters to gather metrics. You can use various exporters depending on the type of task you are performing. Default exporter to gether metrics from a linux host is `node exporter`.
+
 # 19. 13.08 Gitlab CI
 
 Use `.gitlab-ci.yml` file to define your pipelines. Full syntax and explanation as how to use them is [here](https://docs.gitlab.com/ee/ci/yaml/).

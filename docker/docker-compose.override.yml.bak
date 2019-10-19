@@ -1,0 +1,6 @@
+version: '3.3'
+services:
+  post:
+    command: --debug -w 2
+  comment:
+    command: --debug -w 2
