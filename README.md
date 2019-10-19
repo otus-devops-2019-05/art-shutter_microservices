@@ -2,6 +2,16 @@
 
 Repository with home tasks for OTUS/express40 DevOps course
 
+# 21. 27.08 Monitoring-2
+
+side note: if you use two separate docker-compose files to reference single app, make sure you reference network as external in the dependent docker-compose file.
+
+[Docker hub link 346245737637245](https://cloud.docker.com/u/346245737637245/repository/list)
+
+To add docker as data source for Prometheus, you need to enable it in the daemon.json. Read up on this [here](https://docs.docker.com/config/thirdparty/prometheus/).
+
+You can use Telegraf without InfluxDB to export metrics directly into Prometheus, see example [here](https://blog.nobugware.com/post/2016/telegraf_prometheus_metrics_swiss_army_knife/). Use [this image](https://hub.docker.com/_/telegraf) to install Telegraf.
+
 # 20. 22.08 Monitoring-1
 
 Prometheus uses exporters to gather metrics. You can use various exporters depending on the type of task you are performing. Default exporter to gether metrics from a linux host is `node exporter`.
