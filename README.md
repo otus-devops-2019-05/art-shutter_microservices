@@ -2,6 +2,14 @@
 
 Repository with home tasks for OTUS/express40 DevOps course
 
+# 16. 01.08 Docker-3
+
+During builds, docker uses cache if the result of the command is similar to the result in cache AND if the layers above the target are not uinque.
+
+To build smaller images, use Alpine linux. Don't forget to clean package manager's cache if it's enabled. 
+
+To make layers thinner, combine RUN commands into one layer.
+
 # 15. 30.07 Docker-2
 
 ## Useful docker commands:
