@@ -2,6 +2,12 @@
 
 Repository with home tasks for OTUS/express40 DevOps course
 
+# 19. 13.08 Gitlab CI
+
+Use `.gitlab-ci.yml` file to define your pipelines. Full syntax and explanation as how to use them is [here](https://docs.gitlab.com/ee/ci/yaml/).
+
+You can dockerize runners to improve control over them.
+
 # 17. 06.08 Docker-4
 
 ## Networking in docker
